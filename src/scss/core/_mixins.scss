@@ -1,0 +1,77 @@
+//Usage:
+// @include bg(cover)
+@mixin bg($setting, $background: ""){
+    @if $setting == cover {
+        background-position: center;
+        background-size: cover;
+    } @else if $setting == contain {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @if $background != ""{
+        background-image: url( $background );
+    } @else {
+        background-image: url( $placeholder-image );
+    }
+}
+
+
+//Usage:
+// @include btn-bg(black)
+@mixin btn-bg($bg-color, $color: "", $touchSize: $mediumish){
+    @if $color != "" { color: $color; }   
+
+    background: $bg-color; 
+    transition: .25s all;
+    
+    @media(min-width: $touchSize){
+        &:hover { 
+            background: lighten($bg-color, 10%);
+            @if $color != "" { color: $color; }        
+        }
+    }
+
+    &:active { 
+        transition: 0s all;
+        background: lighten($bg-color, 20%);
+        @if $color != "" { color: $color; }     
+    }
+    
+}
+
+//Usage:
+// @include btn-opacity()
+@mixin btn-opacity(){
+    transition: .25s all;
+    
+    @media(min-width: $touchSize){
+        &:hover { 
+            opacity: 0.9;
+            @if $color != "" { color: $color; }        
+        }
+    }
+
+    &:active { 
+        transition: 0s all;
+        opacity: 0.8;
+        @if $color != "" { color: $color; }     
+    }   
+}
+
+
+
+@mixin placeholder($color: #666666){
+    &::-webkit-input-placeholder { color: $color; }
+    &::-moz-placeholder { color: $color; }
+    &:-ms-input-placeholder { color: $color; }
+    &::placeholder { color: $color; }
+}
+
+
+@mixin no-scroller(){
+    &::-webkit-scrollbar { width: 0 !important; }
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}

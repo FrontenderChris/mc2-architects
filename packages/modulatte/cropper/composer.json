@@ -1,0 +1,16 @@
+{
+    "name": "modulatte/cropper",
+    "description": "Cropping tool for the CMS",
+    "authors": [
+        {
+            "name": "Josh Warner",
+            "email": "me@josh.kiwi"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modulatte\\Cropper\\": "src/"
+        }
+    },
+    "require": {}
+}

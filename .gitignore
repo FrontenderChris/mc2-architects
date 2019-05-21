@@ -1,0 +1,21 @@
+# Laravel
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+
+.vagrant/*
+Vagrantfile
+
+# JetBrains IDE
+/.idea
+_ide_helper.php
+.phpstorm.meta.php
+
+# Custom
+/public/uploads
+/.buildpath
+/.project
+/.settings
+/.vscode

@@ -1,0 +1,89 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://toran.ongoing.co.nz/repo/private/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*",
+        "davejamesmiller/laravel-breadcrumbs": "^3.0",
+        "laravelcollective/html": "~5.0",
+        "maatwebsite/excel": "~2.1.0",
+        "jenssegers/agent": "^2.3",
+        "spatie/laravel-analytics": "^1.3",
+        "watson/sitemap": "^2.0",
+        "ellisthedev/laravel-5-robots": "^0.1.0",
+        "sentry/sentry-laravel": "^0.3.0",
+        "modulatte/pages": "1.*",
+        "modulatte/sections": "1.*",
+        "modulatte/gallery": "0.*",
+        "modulatte/cropper": "1.*",
+        "modulatte/categories": "^0.0.7"
+    },
+    "require-dev": {
+        "laravel/homestead": "^4",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "symfony/css-selector": "2.8.*|3.0.*",
+        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "doctrine/dbal": "^2.5"
+    },
+    "autoload": {
+        "classmap": [
+            "database",
+            "vendor/modulatte/sections/src/migrations",
+            "vendor/modulatte/pages/src/database/migrations",
+            "vendor/modulatte/blog/src/migrations",
+            "vendor/modulatte/categories/src/migrations",
+            "packages/modulatte/sections/src/migrations",
+            "packages/modulatte/pages/src/database/migrations",
+            "packages/modulatte/categories/src/migrations"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Modulatte\\Pages\\": "packages/modulatte/pages/src",
+            "Modulatte\\Sections\\": "packages/modulatte/sections/src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "pre-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    }
+}

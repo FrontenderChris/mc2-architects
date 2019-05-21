@@ -1,0 +1,98 @@
+/*********************************************
+:: SignUp Module
+********************************************/
+.signup-module{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	display: inline-block;
+	text-align: center;
+	background: white;
+	border-top: 1px solid #CCCCCC;
+	@include mappy-bp(mediumish){
+		padding-bottom: 0px;
+	}
+
+	.content-max-width {
+		@include mappy-bp(mediumish){
+		    width: 80%;
+    		max-width: 660px;
+		}
+	}
+
+	.success, .error {
+		width: 100%;
+		text-align: center;
+	}
+
+	.success {
+		color: green;
+	}
+
+	.error {
+		color: red;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 300;
+		color: $color-brand-1;
+		padding: 17px 0;
+		margin: 0px;
+		@include mappy-bp(mediumish){
+			width: 50%;
+			float: left;
+			font-size: 18px;
+			padding: 41px 0;
+
+		}
+	}
+
+	form {
+		width: 100%;
+		max-width: 487px;
+		margin: 0 auto;
+		display: inline-block;
+		float: none;
+		border-top: none !important;
+		@include mappy-bp(mediumish){
+			width: 50%;
+			float: left;
+		    padding: 35px 0;
+		}
+
+		input {
+			width: 70%;
+			height: 42px;
+			border: 1px solid #CCCCCC;
+			border-radius: 6px 0 0 6px;
+			float: left;
+		}
+
+		button {
+			width: 30%;
+			height: 42px;
+			float: right;
+			padding: 10px;
+			background: $color-brand-2;
+			color: $color-brand-1;
+		    vertical-align: middle;
+		    border-radius: 0 6px 6px 0;
+		    font-size: 18px;
+		    font-family: $font-family-2;
+
+			&:hover {
+				background: $color-brand-1;
+				color: white;
+			}
+
+		    .icon-search {
+		    	vertical-align: middle;
+		    }
+		}
+	}//form
+}
+/********************************************/
+

@@ -1,0 +1,226 @@
+/*********************************************
+:: Forms
+********************************************/
+
+form {
+    width: 100%;
+    background: white;
+}
+
+legend {
+    margin-bottom: 15px;
+    @extend h2;
+}
+
+label {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: $font-light;
+    color: black;
+}
+
+/*******************************************/
+// Disabled Field Styles
+.field-disabled,
+input[disabled],
+textarea[disabled],
+select[disabled],
+input[readonly],
+textarea[readonly],
+select[readonly] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/*******************************************/
+// Core Field Styles
+input, textarea, select {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+
+    font-size: 14px;
+    line-height: 40px;
+    
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    outline: none;
+    transition: all .5s ease-in-out;
+
+    &:hover, &:focus {
+        background: #f1f1f1;
+        border: 1px solid $color-brand-2;
+        transition: all .5s ease-in;
+    }
+
+}
+
+/*******************************************/
+// Misc Field Styles
+*::placeholder {
+    font-family: $font-family-2;
+    font-size: 14px;
+    font-weight: $font-light;
+    color: #999;
+}
+
+textarea, select[multiple] {
+    height: 157px;
+}
+
+input[type=checkbox], input[type=radio] {
+    height: auto;
+}
+
+/*******************************************/
+// Custom Checkbox/Radio Styles (no JS)
+.form-field .custom-checkbox-radio {
+    float: left;
+    width: auto;
+    margin: 0;
+    padding: 0 0 5px;
+
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+
+    input {
+      display: inline-block;
+      vertical-align: top;
+      width: 15px;
+      height: 15px;
+      margin: 2px 5px 0 0;
+      padding: 0;
+
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+}
+
+/*******************************************/
+// Form Field Container
+.form-field {
+    float:left;
+    width: 100%;
+    padding: 0 0 15px;
+
+    label{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
+
+/*******************************************/
+// Button Field Container
+.button-field {
+    float:left;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+
+    text-align: center;
+
+    .form-note {
+        float:none;
+        margin-top: 11px;
+
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+
+        @include mappy-bp(mediumish){
+            float:left;
+            width: auto;
+            margin-bottom: 0px;
+        }
+    }
+
+    button, input[type="submit"], input[type="reset"] {
+        display: block;
+        width: 108px;
+        height: 40px;
+        margin: auto;
+
+        font-family: $font-family-2;
+        font-size: 12px;
+        font-weight: $font-normal;
+        text-align: center;
+        color: white;
+
+        background: $color-brand-1;
+        border-radius: 0;
+        transition: all .4s ease-in-out;
+
+        @include mappy-bp(mediumish){
+            margin-left: 10px;
+            float:right;
+        }
+
+        span {
+            color: white;
+        }
+
+        &:hover, &:focus, &:active {
+            background: $color-brand-2;
+        }
+    }
+}
+
+/*******************************************/
+// Form Fields Stack
+
+.form-fields-stack {
+    lost-utility: clearfix;
+
+    &.two-column {
+        .form-field {
+            width: 100%;
+            @include mappy-bp(mediumish){
+                lost-column: 1/2 2 10px;
+            }
+        }
+    }
+
+    &.three-column {
+        .form-field {
+            width: 100%;
+            @include mappy-bp(mediumish){
+                lost-column: 1/3 3 10px;
+            }
+        }
+    }
+}
+
+/*******************************************/
+// Form Feedback
+.form-field.error input,
+.form-field.error textarea,
+.form-field.error select,
+.form-field.error .SumoSelect>.CaptionCont {
+    border-color: $color-attention;
+}
+
+.form-field.valid input,
+.form-field.valid textarea,
+.form-field.valid select,
+.form-field.valid .SumoSelect>.CaptionCont{
+    color: black;
+    border-color: #CCCCCC;
+}
+
+label.error, label.error-SumoSelect-label, .php-error li {
+    margin: 10px 0 0;
+    font-weight: $font-bold;
+    color: $color-attention !important;
+}
+
+.form-note {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: $font-normal;
+    line-height: 1;
+}

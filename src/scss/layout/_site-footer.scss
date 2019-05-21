@@ -1,0 +1,144 @@
+/*********************************************
+  :: Site Footer
+********************************************/
+.site-footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: $footer-height-mobile;
+    margin: 0;
+    padding: 0;
+    background: white;
+    
+    @include mappy-bp(mediumish){
+        min-height: $footer-height-desktop;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 180px;
+        height: 1px;
+        margin: auto;
+
+        background: black;
+    }
+
+    .footer-legal {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+        overflow: hidden;
+
+        .contact {
+            width: 100%;
+            margin: 0 0 20px;
+
+            display: inline-block;
+            font-size: 0;
+            text-align: center;
+
+            p,a {
+                position: relative;
+                margin: 0;
+                padding: 0 12px;
+
+                font-size: 13px;
+                letter-spacing: 1.2px;
+                line-height: 22px;
+                color: #333333;
+
+                transition: all 0.6s ease-in-out;
+                opacity: 0.4;
+
+                @include mappy-bp(mediumish){
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        right: 0;
+
+                        width: 1px;
+                        height: 11px;
+                        background: #dedede;
+                    }
+                }
+            }
+
+            a.mail {
+                transform: translateX(35px);
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            p {
+                transform: translateX(-35px);
+            }
+        }
+        
+        p, a {
+            display: inline-block;
+            width: 100%;
+            margin: 0 0 10px;
+
+            font-size: 11px;
+            line-height: 11px;
+            text-align: center;
+            color: white;
+
+            @include mappy-bp(mediumish){
+                width: auto;
+            }
+        }
+
+        .attribution, .copyright {
+            display: block;
+
+            font-weight: $font-light;
+            color: #999999;
+        }
+    }
+
+    &.come-in .contact {
+
+        p,a {
+            opacity: 1;
+        }
+
+        p {
+            transform: translateX(0px);
+        }
+
+        a.mail {
+            transform: translateX(0px);
+        }
+    }
+}
+
+/********************************************/
+
+body.black .site-footer {
+    background: black;
+
+    .footer-legal {
+
+        .contact {
+
+            p,a {
+                color: #dedede;
+            }
+
+        }
+
+    }
+
+}
+
+/********************************************/

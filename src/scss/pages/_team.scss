@@ -1,0 +1,91 @@
+/*********************************************
+:: Team Page                   
+********************************************/
+.page-team {
+
+    .detail-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 0 0 100px;
+
+        article {
+            display: inline-block;     
+            width: 100%;
+            margin-bottom: 78px;
+
+            @include mappy-bp(mediumish){
+                margin-bottom: 105px;
+            }
+
+            .image {
+                float: left;
+                width: 100%;
+                margin-bottom: 24px;
+
+                @include mappy-bp(mediumish){
+                    width: 300px;
+                }
+
+                img {
+                    float: left;
+                    width: 135px;
+                    height: 135px;
+                    
+                    @include mappy-bp(mediumish){
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+
+            .info {
+                float: left;
+                width: 100%;
+                max-width: 550px;
+
+                @include mappy-bp(mediumish){
+                    width: calc(100% - 300px);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    font-weight: $font-light;
+                    letter-spacing: 1.2px;
+                    line-height: 22px;
+                    text-transform: uppercase;
+
+                    @include mappy-bp(mediumish){
+                        font-size: 20px;
+                    }
+                }
+
+                h5 {
+                    margin-bottom: 32px;
+                    padding-bottom: 10px;
+
+                    font-size: 10px;
+                    font-weight: $font-semibold;
+
+                    border-bottom: 1px solid #d8d8d8;
+
+                    @include mappy-bp(mediumish){
+                        margin-bottom: 21px;
+                        font-size: 14px;
+                    }
+                }
+
+                a.talk {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: $font-semibold;
+                    color: black;
+                }
+            }
+        }
+    }
+    /********************************************/
+            
+}

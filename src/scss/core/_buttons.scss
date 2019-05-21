@@ -1,0 +1,142 @@
+/*********************************************
+:: Buttons                             
+********************************************/
+
+button {
+    outline: none;
+}
+
+/*******************************************/
+// Default Button
+
+.button {
+    display: inline-block;
+    height: auto;
+    padding: 0px 12px;
+
+    font-family: $font-family-2;
+    font-size: 14px;
+    font-weight: $font-semibold;
+    line-height: 30px;
+    text-decoration: none;
+    color: $color-brand-1;
+
+    background: transparent;
+    transition: all .4s ease-in-out;
+
+    &:hover, &:focus, &:active{
+		color: $color-brand-1;
+    }
+}
+
+/*******************************************/
+// Button White 
+
+.button-white {
+    color: black;
+    background: white;
+
+    @include mappy-bp(medium){
+        &:hover, &:focus, &:active{
+			background: black;
+            color:white;
+        }
+    }
+}
+
+
+/*******************************************/
+// Button Load More 
+
+.button-more {
+    width: 100%;
+    margin: 0px 0 40px 0;
+    text-align: center;
+    position: relative;
+    background: white;
+
+    @include mappy-bp(mediumish){
+        margin: 40px 0 100px 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        width: 100%;
+        height: 1px;
+
+        background: #979797;
+    }
+
+    p {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 0 50px;
+        
+        font-size: 14px;
+        line-height: 40px;
+        color: $color-brand-2;
+
+        background: white;
+        z-index: 1;
+        transition: all 0.25s ease-in-out;
+
+        @include mappy-bp(mediumish){
+            font-size: 24px;
+        }
+    }
+
+    &:hover {
+        background: white;
+        p {
+            filter:brightness(120%);
+        }
+    }
+}
+
+/*******************************************/
+// Button Transparent 
+
+.button-underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    font-family: $font-family-2;
+    font-size: 18px;
+    font-weight: $font-light;
+    text-align: center;
+    color: $color-brand-2;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px; left: 0; right: 0;
+
+        width: 138px;
+        height: 5px;
+        margin: auto;
+        background: $color-brand-2;
+    }
+}
+
+/*******************************************/
+// Disabled Button Styles
+
+.button-disabled,
+.button[disabled],
+button[disabled],
+button[type="submit"][disabled],
+input[type="submit"][disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled]{
+	color:white;
+	opacity: 0.5;
+	cursor: default;
+}
+

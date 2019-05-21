@@ -1,0 +1,58 @@
+/*********************************************
+:: Title Module                    
+********************************************/
+
+.title-container {
+	position: relative;
+
+	display: inline-block;
+	width: 100%;
+	margin: 100px 0 50px;
+	padding: 0 6%;
+
+	text-align: center;
+	
+	h1 {
+		position: relative;
+		margin-bottom: 14px;
+		font-size: 26px;
+		font-weight: $font-normal;
+		line-height: 30px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: black;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -7px;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+			width: 180px;
+			height: 2px;
+			background: black;
+
+			opacity: 1;
+			transition: all 2.5s ease-in-out;
+		}
+
+		&.border {
+			&:after {
+				opacity: 0;
+				width: 0px;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 14px;
+		font-weight: $font-normal;
+		line-height: 24px;
+		text-transform: uppercase;
+		letter-spacing: 1.75px;
+		color: black;
+	}
+}
+/********************************************/

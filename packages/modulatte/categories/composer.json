@@ -1,0 +1,16 @@
+{
+    "name": "modulatte/categories",
+    "description": "Categories package - Work in progress",
+    "authors": [
+        {
+            "name": "Josh Warner",
+            "email": "me@josh.kiwi"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modulatte\\Categories\\": "src/"
+        }
+    },
+    "require": {}
+}

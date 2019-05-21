@@ -1,0 +1,52 @@
+/*********************************************
+:: Hero Module                    
+********************************************/
+
+.hero-container {
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+    min-height: 300px;
+
+    text-align: center;
+    
+    background-position: center;
+    background-size: cover;
+
+    transform-style: preserve-3d;
+    z-index: 2;
+    
+    @include mappy-bp(small){
+		min-height: 400px;
+	}
+    @include mappy-bp(medium){
+		min-height: 600px;
+	}
+    @include mappy-bp(mediumish){
+		height: 100vh;
+	}
+
+    .scroller {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        z-index: 9;
+
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &.loaded {
+        .before {
+            opacity: 0;
+        }
+    }
+}
+/********************************************/

@@ -1,0 +1,68 @@
+.dashboard
+    .header-col
+        margin: 10px 0
+
+        h3
+            margin: 5px 0 0 0
+
+    .chart-row
+        width: 100%
+
+        .item:first-of-type
+            margin: 0
+
+        .item:last-of-type
+            margin: 0
+            border: 0
+
+        .item
+            width: 33%
+            min-height: 225px
+            padding: 20px 2% 0 2%
+            display: inline-block
+            border-right: 1px solid #eee
+            vertical-align: top
+
+            @media (max-width: 600px)
+                width: 100%
+                border-bottom: 2px solid #eee
+
+            .small-circle
+                width: 100%
+                display: block
+
+            p
+                color: #999
+                font-size: 18px
+                text-align: center
+
+            ol
+                list-style-type: none
+                margin-top: 20px
+
+                li
+                    counter-increment: step-counter
+                    font-size: 15px
+                    color: #999
+                    padding: 5px 0
+                    white-space: nowrap
+                    text-overflow: ellipsis
+                    overflow: hidden
+
+                li::before
+                    content: counter(step-counter)
+                    margin-right: 5px
+                    font-size: 80%
+                    background-color: #15A2FC
+                    color: white
+                    font-weight: bold
+                    padding: 3px 8px
+                    border-radius: 3px
+
+            .circliful-circle
+                width: 70%
+                margin: -20px auto 0 auto
+
+    #pageViewsChart
+        @media (max-width: 600px)
+            display: none

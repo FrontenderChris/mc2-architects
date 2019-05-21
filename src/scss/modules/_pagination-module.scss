@@ -1,0 +1,58 @@
+/*********************************************
+:: Pagination Module                    
+********************************************/
+.pagination-module{
+	width: 88%;
+	height: 40px;
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+    text-align: center;
+
+	@include mappy-bp(medium){
+		padding: 0 0 150px 0
+	}
+
+	a {
+		position: relative;
+		width: auto;
+		margin: 0;
+		padding: 15px;
+
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+		color: #9b9b9b;
+
+		transition: all 0.5s ease-in-out;
+
+		@include mappy-bp(medium){
+			font-size: 18px;
+			border-bottom: 1px solid black;
+		}
+	}
+	
+	a.older {
+		float: left;
+		left: -10px;
+		@include mappy-bp(medium){
+			float: right;
+		}
+	}
+
+	a.newer {
+    	float: right;
+		right: -10px;
+
+		font-weight: $font-normal;
+    	color: black;
+	}
+
+	a:hover {
+		color: #CCCCCC;
+		border-color: #CCCCCC;
+	}
+
+}
+/********************************************/
+

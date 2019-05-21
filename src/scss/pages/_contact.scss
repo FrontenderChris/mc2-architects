@@ -1,0 +1,113 @@
+/*********************************************
+:: Contact Page                   
+********************************************/
+.page-contact {
+
+    .before.loaded {
+        opacity: 0;
+    }
+
+    .contact-container {
+        display: inline-block;
+        width: 100%;
+        padding: 0 0 100px 0;
+        overflow-x: visible;
+
+        h3 {
+            padding: 0 0 6px 0;
+            width: 100%;
+
+            font-family: $font-family-1;
+            font-size: 16px;
+            font-weight: $font-semibold;
+            line-height: 22px;
+            letter-spacing: 2px;
+            color: black;
+
+            border-bottom: 1px solid #CCC;
+        }
+
+        .col1 {
+            float: left;
+            margin-bottom: 35px;
+            width: 100%;
+
+            @include mappy-bp(mediumish) {
+                width: 50%;
+                padding-right: 60px;
+            }
+
+            p {
+                margin: 0px 0 4px 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                @include mappy-bp(mediumish) {
+                    margin: 0px 0 8px 0;
+                }
+            }
+
+            p.address {
+                margin-top: 20px;
+            }
+
+            a {
+                display: block;
+            }
+
+            .phone {
+                margin: 0px;
+                font-size: 24px;
+                font-weight: $font-semibold;
+                line-height: 29px;
+                color: $color-brand-1;
+            }
+
+            .email {
+                padding-bottom: 20px;
+
+                font-size: 16px;
+                line-height: 20px;
+                border-bottom: 1px solid #CCC;
+            }
+
+        }
+
+        .col2 {
+            position: relative;
+            float: left;
+            padding: 20px 0% 0 0%;
+            width: 100%;
+
+            @include mappy-bp(mediumish) {
+                width: 50%;
+                right: -100px;
+                float: right;
+                padding: 0px;
+            }
+
+            .map {
+                float: left;
+                margin: auto;
+                width: 100%;
+                height: 300px;
+
+                @include mappy-bp(mediumish) {
+                    float: right;
+                    min-width: 500px;
+                }
+            }
+        }
+
+        form {
+            float: left;
+            margin: 60px 0 0;
+            @include mappy-bp(mediumish) {
+                width: 90%;
+            }
+        }
+
+    }
+    /********************************************/
+    
+}

@@ -1,0 +1,21 @@
+{
+    "css-cms": {
+        "type": "sass",
+        "plugins": true,
+        "src": [
+            "./src/cms/css/vendor/*.css",
+            "./src/cms/sass/**/*.sass"
+        ],
+        "output": "./public/cms/css/application.css"
+    },
+
+    "js-cms": {
+        "type": "js",
+        "plugins": true,
+        "src": [
+            "./src/cms/js/vendor/**/*.js",
+            "./src/cms/js/**/*.js"
+        ],
+        "output": "./public/cms/js/application.js"
+    }
+}

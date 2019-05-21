@@ -1,0 +1,59 @@
+/*********************************************
+:: Social Module                    
+********************************************/
+.social-module{
+	width: 100%;
+	margin: 0 auto 20px auto;
+	padding: 20px 0;
+	display: inline-block;
+	text-align: center;
+
+	@include mappy-bp(mediumish) {
+		text-align: left;
+		margin: 0 0 60px 0px;
+		border: none;
+	}
+	
+	.button-icon {
+	  	border-radius: 20px;
+	  	padding: 5px 16px;
+	  	color: white;
+	  	font-size: 0.8em;
+	  	border: 1px solid white;
+		span{
+			font-size: 0.8em;
+	    	color: white;
+		}
+
+		&:hover {
+			color: #CCCCCC;
+			border: 1px solid #CCCCCC;
+
+			span {
+				color: #CCCCCC;
+			}
+		}
+
+	}// Button Icon
+
+	#button-mail {
+		background: $color-brand-1;
+		&:hover {
+			background: white;
+		}
+	}
+	#button-facebook {
+		background: $color-facebook;
+		&:hover {
+			background: white;
+		}
+	}
+	#button-tweet {
+		background: $color-twitter;
+		&:hover {
+			background: white;
+		}
+	}
+
+}
+

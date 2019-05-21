@@ -1,0 +1,140 @@
+/*********************************************
+  :: Lightbox Custom Styles (for: Magnific Popup)
+********************************************/
+
+/* Overiding Plugin Styles */
+button.mfp-close {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    z-index: 1100;
+    width: 38px;
+    height: 38px;
+    font-family: $font-family-1;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 38px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    // &:before{
+    //     content: "\e90c";
+    //     font-family: 'icomoon';
+    //     speak: none;
+    //     font-style: normal;
+    //     font-weight: normal;
+    //     font-variant: normal;
+    //     text-transform: none;
+    //     line-height: 1;
+    //     -webkit-font-smoothing: antialiased;
+    //     -moz-osx-font-smoothing: grayscale;
+    //     display: inline-block;
+    //     color: white;
+    // }
+
+}
+
+.mfp-zoom-out-cur {
+    cursor: pointer;
+}
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer;
+}
+
+.mfp-bg {
+    z-index: 999999;
+}
+
+.mfp-wrap {
+    z-index: 9999999;
+}
+
+.mfp-container {
+    width: 90%;
+    max-width: 895px;
+    right: 0px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+button.mfp-arrow {
+    text-align: center;
+
+    &:before {
+        display: none;
+    }
+
+    &:after {
+        width: 100%;
+        margin: 0 auto;
+        
+        font-family: $font-icon;
+        font-size: 60px;
+        color: black;
+
+        border: none;
+
+        @include mappy-bp(smallish){
+            color: white;
+        }
+    }
+
+}
+
+button.mfp-arrow.mfp-arrow-left {
+    &:after {
+        content: "\e916";
+    }
+
+    @include mappy-bp(mediumish){
+        left: -100px;
+    }
+}
+
+button.mfp-arrow.mfp-arrow-right {
+    &:after {
+        content: "\e917";
+    }
+
+    @include mappy-bp(mediumish){
+        right: -100px;
+    }
+}
+
+
+/* Default Fade-zoom animation */
+.mfp-zoom-in .lightbox-popup { /* start state */
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+.mfp-zoom-in.mfp-ready .lightbox-popup,
+.mfp-zoom-in.mfp-ready .mfp-close{ /* animate in */
+     opacity: 1;
+     transform: scale(1.0);
+}
+.mfp-zoom-in.mfp-removing .lightbox-popup,
+.mfp-zoom-in.mfp-removing .mfp-close { /* animate out */
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.mfp-zoom-in.mfp-bg { /* Dark overlay, start state */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    background:rgba(0,0,0,0.69);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg { /* animate in */
+    opacity: 1;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg { /* animate out */
+    opacity: 0;
+}
+
+
+
+

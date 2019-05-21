@@ -1,0 +1,240 @@
+/*********************************************
+:: Typography
+********************************************/
+
+html {
+    font-family: $font-family-1;
+    font-weight: $font-normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-family-1 !important;
+    font-weight: $font-semibold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 32px;
+    color: $color-brand-1;
+
+    @include mappy-bp(mediumish){
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 28px;
+
+    @include mappy-bp(mediumish) {
+        font-size: 26px;
+    }
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 26px;
+
+    @include mappy-bp(mediumish) {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+
+    @include mappy-bp(mediumish){
+        font-size: 20px;  
+    }
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+
+    @include mappy-bp(mediumish){
+        font-size: 18px;  
+    }
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+
+    @include mappy-bp(mediumish){
+        font-size: 16px;  
+    }
+}
+
+/*******************************************/
+//Main
+
+p, li, td, th, a, mark, time, dl, label, address {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+
+    a, li, p, mark, cite, time {
+        font-size: 1em;
+    }
+}
+
+a {
+    margin: 0px;
+    font-weight: $font-normal;
+    text-decoration: none;
+    color: $color-link;
+    transition: all .5s ease-in-out;
+
+    &:hover, &:focus, &:active{
+        color: $color-link-hover;
+    }
+}
+
+small {
+    font-size: 70%;
+}
+
+strong, b {
+  font-weight: $font-bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+
+    background: $color-medium-grey;
+    border: none;
+    outline: none;
+}
+
+
+/*******************************************/
+// Lists
+
+dt {
+    font-weight: $font-bold;
+
+    &:after{
+        content: ':';
+    }
+}
+
+dt:after {
+  content: ": ";
+}
+
+
+ul li{
+    position: relative;
+    list-style-type: none;
+    text-indent: 0px;
+    // &:before{
+    //     content: "";
+    //     width: 13px;
+    //     height: 13px;
+    //     background: $color-brand-1;
+    //     position: absolute;
+    //     left: -24px;
+    //     top: 6px;
+    //     display: block;
+    //     border-radius: 100%;
+    // }
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+
+
+/*******************************************/
+// Code
+
+code, pre, samp, kbd, var{
+    margin: 0px;
+    padding: 1px 5px 1px 5px;
+
+    color: white;
+    background: #2D747E;
+    white-space: pre-wrap;
+}
+
+pre{
+    padding: 10px;
+}
+
+/*******************************************/
+// Blockquote
+
+blockquote {
+    position: relative;
+    display: block;
+    margin: 35px 0 55px 0;
+    padding: 20px 10% 20px 10%;
+    
+    font-size: 20px;
+    font-weight: $font-light;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+    color: $color-brand-4;
+
+    @include mappy-bp(mediumish){
+        padding: 40px 10% 40px 10%;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+/*******************************************/
+//Styles for Content Areas (wysiwyg)
+
+.wysiwyg {
+  text-align: left;
+
+    img {
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+
+    ul {
+        li {
+            list-style-type: disc;
+        }
+    }
+
+}
+
+.leadcopy {
+    font-size: 15px;
+    font-weight: $font-bold;
+    line-height: 24px;
+    color: black;
+    
+    @include mappy-bp(mediumish){
+        font-size: 17px;
+    }
+}
+
+/*******************************************/
+//Typekit Trick
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading p,
+.wf-loading a{
+    visibility: hidden
+}

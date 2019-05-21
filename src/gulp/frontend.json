@@ -1,0 +1,21 @@
+{
+    "css-site": {
+        "type": "sassLost",
+        "src": "./src/scss/styles.scss",
+        "output": "./public/css/styles.css"
+    },
+    "css-plugins": {
+        "type": "styles",
+        "src": "./src/css/**/*.css",
+        "output": "./public/css/plugins.css"
+    },
+    "js-site": {
+        "type": "js",
+        "src": [
+            "./src/js/lib/**/*.js",
+            "./src/js/plugins/**/*.js",
+            "./src/js/**/*.js"
+        ],
+        "output": "./public/js/site.js"
+    }
+}

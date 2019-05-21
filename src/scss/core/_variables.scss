@@ -1,0 +1,94 @@
+/*********************************************
+:: Variables                      
+********************************************/
+
+//Mappy Breakpoints: https://github.com/zellwk/mappy-breakpoints
+    
+$breakpoints: (
+    tiny: 350px,
+    small: 450px,
+    smallish: 600px,
+    medium: 768px,
+    mediumish: 1024px,
+    large: 1160px,
+    largeish: 1280px,
+    huge: 1440px, 
+    bigmac: 1920px
+);
+
+//Breakpoint Sizes
+$mediumish : 1024px;
+$tablet : 600px;
+$iphone5: 350px;
+
+/*******************************************/
+//Fonts
+
+// Base Fonts
+$font-family-1: "proxima-nova", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+$font-family-2: "proxima-nova", "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+$font-icon: "icomoon";
+
+// Fonts Weights
+$font-light: 300;
+$font-normal: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 900;
+
+/*******************************************/
+//Colors
+
+// Brand Colorss
+$color-brand-1: black;
+$color-brand-2: black;
+$color-brand-3: #000621; //dark-navy
+$color-brand-4: #5ea5bb; //teal
+
+// Shades of Grey
+$color-grey: #979797;
+$color-medium-grey: #ccc;
+$color-dark-grey: #212121;
+$color-light-grey: #ececec;
+
+// Links
+$color-link: $color-brand-1;
+$color-link-hover: darken($color-link, 12%);
+
+// User Feedback
+$color-message: $color-medium-grey;
+$color-attention: $color-brand-1;
+$color-success: #38B449;
+
+// Social Media
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+$color-vimeo: #1ab7ea;
+$color-youtube: #cd201f;
+$color-gplus: #DC4E41;
+
+/*******************************************/
+//Page Height Calculator
+$header-height-desktop: 60px;
+$header-height-mobile: 60px;
+
+$footer-height-desktop: 155px;
+$footer-height-mobile: 155px;
+
+
+/*******************************************/
+// Form
+
+// Form Field Dimensions
+$form-field-height: 41px;
+$form-field-height-large: 120px;
+$form-field-padding: 6px 10px 6px 10px;
+
+//*******************************************/
+//Typography
+
+
+//*******************************************/
+//Placeholder image
+
+$placeholder-image: "https://www.scandichotels.com/Static/img/placeholders/image-placeholder_3x2.svg";

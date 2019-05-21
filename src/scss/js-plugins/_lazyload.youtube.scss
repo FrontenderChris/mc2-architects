@@ -1,0 +1,72 @@
+.youtube-container {
+    display: block;
+    width: 100%;
+}
+.youtube-player {
+    display: block;
+    width: 100%; /* assuming that the video has a 16:9 ratio */
+    //padding-bottom: 75.25%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    cursor: hand;
+    cursor: pointer;
+    height: 180px;
+    @include mappy-bp(smallish){
+        height: 250px;
+    }
+    @include mappy-bp(medium){
+        height: 300px;
+    }
+    @include mappy-bp(mediumish){
+        height: 350px;
+    }
+    @include mappy-bp(large){
+        height: 550px;
+    }
+}
+img.youtube-thumb {
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -0.5px;
+}
+
+.youtube-bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+    
+div.play-button {
+    display: inline-block;
+    position: absolute;
+    top: 53%;
+    left: 52%;
+    transform: translateX(-50%) translateY(-50%);
+  
+    &:after{
+        content: '';
+        display: inline-block;
+        border-style: solid;
+        border-width: 30px 0 30px 50px;
+        border-color: transparent transparent transparent white;
+    }
+  
+}
+
+#youtube-iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "modulatte/gallery",
+    "description": "Gallery module",
+    "authors": [
+        {
+            "name": "Josh Warner",
+            "email": "me@josh.kiwi"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modulatte\\Gallery\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -1,0 +1,51 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect www to non www domain (SEO)
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+Redirect 301 /blog/ /
+Redirect 301 /blog/2015/7/25/beachfront-lane-office /
+Redirect 301 /work/ /projects
+Redirect 301 /blog/2016/3/3/modular-homes /
+Redirect 301 /ice-1/ /projects
+Redirect 301 /winter/ /projects
+Redirect 301 /scott-point/ /projects
+Redirect 301 /blog/2016/2/14/mixing-architecturewith-coffee-and-gelato /
+Redirect 301 /buildings/ /projects
+Redirect 301 /blog/2015/11/12/gingersnap-coffee-gelato /
+Redirect 301 /multistorey-residential/ /projects
+Redirect 301 /infinite/ /projects
+Redirect 301 /new-page/ /contact-us
+Redirect 301 /new-gallery-4/ /projects
+Redirect 301 /cities/ /projects
+Redirect 301 /new-gallery-3/ /projects
+Redirect 301 /away-1/ /projects
+Redirect 301 /sel-peacock/ /projects
+Redirect 301 /mountains/ /projects
+Redirect 301 /new-gallery-2/ /projects
+Redirect 301 /water/ /projects
+Redirect 301 /blog/2015/10/15/summer-is-coming /projects
+Redirect 301 /away/ /projects
+Redirect 301 /new-gallery/ /projects
+Redirect 301 /trees/ /projects
+Redirect 301 /new-gallery-1/ /projects
+
+RewriteCond %{HTTP_HOST} ^(www\.)?mc2-architects\.co\.nz$ [NC]
+RewriteRule ^(.*)$ http://mc2architects.co.nz/$1 [R=301,L]

@@ -1,0 +1,18 @@
+{
+    "sync": true,
+    "syncDomain": "modulatte.dev",
+    "syncStartPath": "/admin",
+
+    "css": true,
+    "js": true,
+
+    "frontend": true,
+    "cms": true,
+
+    "plugins": true,
+    "sourcemaps": false,
+    "styleguides": false,
+    "copy": true,
+
+    "silent": false
+}

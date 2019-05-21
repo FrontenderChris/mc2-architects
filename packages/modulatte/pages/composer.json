@@ -1,0 +1,16 @@
+{
+    "name": "modulatte/pages",
+    "description": "Pages package for the CMS to create pages/subpages and custom pages using templates",
+    "authors": [
+        {
+            "name": "Josh Warner",
+            "email": "me@josh.kiwi"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modulatte\\Pages\\": "src/"
+        }
+    },
+    "require": {}
+}
