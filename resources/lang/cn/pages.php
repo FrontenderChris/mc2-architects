@@ -22,4 +22,14 @@ return [
     //Profile
     'profileTitle' => '我们的团队',
 
+    //Contact Us
+    'contactUsTitle' => '联系我们',
+    'contactFormTitle' => '联系我们',
+    'fullNameTxt' => '姓名 *',
+    'phoneNumberTxt' => '联系电话 *',
+    'emailTxt' => 'Email地址 *',
+    'messageTxt' => '留下您的咨询信息...',
+    'mandatoryFieldsTxt' => '*必填项',
+    'sendBtn' => '提交',
+
 ];

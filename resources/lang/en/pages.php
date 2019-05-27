@@ -21,4 +21,14 @@ return [
 
     //Profile
     'profileTitle' => 'PROFILE',
+
+    //Contact Us
+    'contactUsTitle' => 'CONTACT US',
+    'contactFormTitle' => 'CONTACT FORM',
+    'fullNameTxt' => 'Full Name *',
+    'phoneNumberTxt' => 'Phone Number *',
+    'emailTxt' => 'Email Address *',
+    'messageTxt' => 'Write a Message',
+    'mandatoryFieldsTxt' => '*Mandatory Fields',
+    'sendBtn' => 'Send',
 ];

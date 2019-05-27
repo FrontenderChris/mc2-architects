@@ -19,3 +19,7 @@ _ide_helper.php
 /.project
 /.settings
 /.vscode
+
+# MAC
+.DS_Store
+*/.DS_Store
