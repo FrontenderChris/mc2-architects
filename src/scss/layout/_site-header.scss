@@ -96,7 +96,7 @@
 
 	.lang-btn {
 		position: fixed;
-		top: 35px;
+		top: 33px;
 		right: 6%;
 		width: 40px;
 		height: 24px;
@@ -105,7 +105,8 @@
 		cursor: pointer;
 		z-index: 9999;
 		li {
-			line-height: 20px;
+            height: 24px;
+			line-height: 24px;
 			a {
 				color: #ffffff;
 				font-size: 18px;
