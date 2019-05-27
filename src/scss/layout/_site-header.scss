@@ -93,7 +93,7 @@
   			transform: rotate(-135deg);
 		}
 	}
-
+	/* MULTI LOCALES STYLE */
 	.lang-btn {
 		position: fixed;
 		top: 33px;
@@ -107,9 +107,11 @@
 		li {
             height: 24px;
 			line-height: 24px;
+			margin: 0;
 			a {
 				color: #ffffff;
 				font-size: 18px;
+				line-height: 24px;
 			}
 		}
 	}

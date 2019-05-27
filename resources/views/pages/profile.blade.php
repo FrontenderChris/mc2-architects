@@ -38,7 +38,7 @@
                         <h3>{{ $section->title }}</h3>
                         <h5>{{ $section->data['title'] }}</h5>
                         <div class="content">
-                            @if (Session::get('applocale') == 'cn')
+                            @if (Session::get('applocale') == 'cn' && !empty($section->data['contentCN']))
                                 {!! nl2br($section->data['contentCN']) !!}
                             @else
                                 {!! nl2br($section->data['content']) !!}

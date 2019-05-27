@@ -27,6 +27,7 @@
                 {{ Form::textarea('data[contentCN]', null, ['class' => 'form-control has-redactor']) }}
             </div>
         </div>
+        {{-- MULTI LOCALES UPDATE --}}
         <div class="form-group">
             {{ Form::label('Email', null, ['class' => 'col-sm-2 control-label required']) }}
             <div class="col-sm-10">

@@ -29,10 +29,10 @@
 		</section>
 		<section class="detail-container">
 			<div class="content-narrow-width">
-                @if (Session::get('applocale') == 'en')
-                    {!! $page->data['content'] !!}
+                @if (Session::get('applocale') == 'cn' && !empty($page->data['contentCN']))
+                    {!! $page->data['contentCN'] !!}
                 @else
-                    {{ trans('pages.aboutUsContent')  }}
+                    {!! $page->data['content'] !!}
                 @endif
 			</div>
 		</section>
