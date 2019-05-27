@@ -9,7 +9,7 @@
 
                 <div class="center">
                     <img src="/images/logo.svg" alt="Mc2 Architects Logo">
-                    <p>PROFILE</p>
+                    <p>{{trans('menu.profile')}}</p>
                 </div>
 
             </div>

@@ -13,7 +13,7 @@
 
 
 Route::group(['middleware' => ['web']], function () {
-
+    // set locale
     Route::get('lang/{locale}', ['as'=>'lang.change', 'uses'=>'LanguageController@setLocale']);
 
     Route::get('/projects', ['as' => 'projects', 'uses' => 'FrontendController@projects']);

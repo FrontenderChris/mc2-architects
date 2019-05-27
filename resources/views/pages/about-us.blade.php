@@ -9,8 +9,7 @@
 
                 <div class="center">
                     <img src="/images/logo.svg" alt="Mc2 Architects Logo">
-                    <p>ABOUT US</p>
-                    
+                    <p>{{trans('menu.aboutUs')}}</p>
                 </div>
 
             </div>
@@ -23,15 +22,18 @@
         <section class="title-container">
             <div class="content-max-width">
                 @if($page->count())
-
-                <h1>{{ $page->title }}</h1>
-                <h2>{{ $page->data['lead_copy'] }}</h2>
+                    <h1>{{ Session::get('applocale') == 'cn' ? trans('pages.aboutUsTitle') : $page->title }}</h1>
+                    <h2>{{ $page->data['lead_copy'] }}</h2>
                 @endif
             </div>
 		</section>
 		<section class="detail-container">
 			<div class="content-narrow-width">
-                {!! $page->data['content'] !!}
+                @if (Session::get('applocale') == 'en')
+                    {!! $page->data['content'] !!}
+                @else
+                    {{ trans('pages.aboutUsContent')  }}
+                @endif
 			</div>
 		</section>
 

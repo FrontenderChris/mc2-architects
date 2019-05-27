@@ -16,6 +16,7 @@ class LanguageController extends Controller
         if (array_key_exists($lang, config('app.locales'))) {
             session(['applocale' => $lang]);
         }
+
         return back()->withInput();
     }
 }

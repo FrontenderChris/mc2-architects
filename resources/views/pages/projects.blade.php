@@ -16,7 +16,7 @@
 
                 <div class="center">
                     <img src="/images/logo.svg" alt="Mc2 Architects Logo">
-                    <p>PROJECTS</p>
+                    <p>{{trans('menu.projects')}}</p>
                     
                 </div>
 
@@ -30,17 +30,16 @@
 
         <section class="title-container">
             <div class="content-max-width">
-                
-                <h1>{{$model->title}}</h1>
+
+                <h1>{{ Session::get('applocale') == 'cn' ? trans('pages.projectsTitle') : $model->title }}</h1>
                 <h2>{{$model->data['lead_copy']}}</h2>
 
             </div>
 		</section>
         <section class="sort-container">
 			<div class="content-max-width">
-
                 <div class="wrap">
-                    <p>Categories</p>
+                    <p>{{trans('pages.categories')}}</p>
                     <select name="sort-categories" id="sort-categories" class="custom-select-dropdown">
                         <option data-option="all" value="all">All</option>
                         @foreach($categories as $category)

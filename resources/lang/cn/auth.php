@@ -13,10 +13,7 @@ return [
     |
     */
 
-    'home' => 'HOME',
-    'aboutUs' => 'ABOUT US',
-    'profile' => 'PROFILE',
-    'projects' => 'PROJECTS',
-    'contactUs' => 'CONTACT US',
+    'failed' => '您的用户名密码错误',
+    'throttle' => '尝试次数过多，请在 :seconds 秒后再次尝试.',
 
 ];
