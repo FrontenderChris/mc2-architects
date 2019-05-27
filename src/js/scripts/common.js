@@ -90,9 +90,9 @@ $(document).ready(function() {
             var ht = $('.hero-container').height();
             
             if(scroll > ht){
-                $('.hamburger').addClass('color-change');
+                $('.hamburger, .lang-btn').addClass('color-change');
             }else {
-                $('.hamburger').removeClass('color-change');
+                $('.hamburger, .lang-btn').removeClass('color-change');
             }
             
         };
