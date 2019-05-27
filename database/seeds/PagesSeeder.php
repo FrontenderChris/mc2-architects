@@ -29,7 +29,7 @@ class PagesSeeder extends Seeder
             factory(\Modulatte\Pages\Models\Page::class, $as)->create();
         }
 
-        if (!page($as = 'about-us')) {
+        if (!page($as = '')) {
             $page = factory(\Modulatte\Pages\Models\Page::class, $as)->create();
             // Example image
             // $page->image()->save(fakeImage(400, 400, 'test'));

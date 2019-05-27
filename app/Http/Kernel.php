@@ -32,6 +32,7 @@ class Kernel extends HttpKernel
             \Illuminate\Http\Middleware\FrameGuard::class,
             \App\Http\Middleware\HttpsProtocol::class,
             \App\Http\Middleware\Redirects::class,
+            \App\Http\Middleware\Language::class, // Chris Globel Language Settings 27-05-2019
         ],
 
         'api' => [

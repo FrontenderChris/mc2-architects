@@ -9,8 +9,12 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
+//
+
 
 Route::group(['middleware' => ['web']], function () {
+
+    Route::get('lang/{locale}', ['as'=>'lang.change', 'uses'=>'LanguageController@setLocale']);
 
     Route::get('/projects', ['as' => 'projects', 'uses' => 'FrontendController@projects']);
     Route::get('project/{project}', ['uses' => 'FrontendController@project']);

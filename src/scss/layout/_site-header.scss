@@ -93,6 +93,25 @@
   			transform: rotate(-135deg);
 		}
 	}
+
+	.lang-btn {
+		position: fixed;
+		top: 35px;
+		right: 6%;
+		width: 30px;
+		height: 22.5px;
+		margin: 0 auto;
+		transition: .5s ease-in-out;
+		cursor: pointer;
+		z-index: 9999;
+		li {
+			line-height: 22.5px;
+			a {
+				color: #ffffff;
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 /********************************************/

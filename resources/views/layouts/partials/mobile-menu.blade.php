@@ -11,11 +11,11 @@
                 <ul>
                     <?php  $route = Route::current();?>
                    
-                    <li class="{{ ($route->page) == '' && $route->uri() == '/' ? 'active' : '' }}"><a href="/">Home</a></li>
-                    <li class="{{ ($route->page) == 'about-us' ? 'active' : '' }}"><a href="/about-us">About Us</a></li>
-                    <li class="{{ ($route->page) == 'profile' ? 'active' : '' }}"><a href="/profile">Profile</a></li>
-                    <li class="{{ ($route->uri()) == 'projects' ? 'active' : '' }}"><a href="/projects">Projects</a></li>           
-                    <li class="{{ ($route->page) == 'contact-us' ? 'active' : '' }}"><a href="/contact-us">Contact Us</a></li>
+                    <li class="{{ ($route->page) == '' && $route->uri() == '/' ? 'active' : '' }}"><a href="/">@lang('menu.home')</a></li>
+                    <li class="{{ ($route->page) == 'about-us' ? 'active' : '' }}"><a href="/about-us">@lang('menu.aboutUs')</a></li>
+                    <li class="{{ ($route->page) == 'profile' ? 'active' : '' }}"><a href="/profile">@lang('menu.profile')</a></li>
+                    <li class="{{ ($route->uri()) == 'projects' ? 'active' : '' }}"><a href="/projects">@lang('menu.projects')</a></li>
+                    <li class="{{ ($route->page) == 'contact-us' ? 'active' : '' }}"><a href="/contact-us">@lang('menu.contactUs')</a></li>
                 </ul>
             </div>
         </div>     
