@@ -38,7 +38,11 @@
                         <h3>{{ $section->title }}</h3>
                         <h5>{{ $section->data['title'] }}</h5>
                         <div class="content">
-                            {!! nl2br($section->data['content']) !!}
+                            @if (Session::get('applocale') == 'cn')
+                                {!! nl2br($section->data['contentCN']) !!}
+                            @else
+                                {!! nl2br($section->data['content']) !!}
+                            @endif
                         </div>
                         <a href="mailto:{{ $section->data['email'] }}" class="talk">{{ $section->data['email'] }}</a>
                         <a href="tel:{{ phoneable($section->data['phone']) }}" class="talk">{{ $section->data['phone'] }}</a>

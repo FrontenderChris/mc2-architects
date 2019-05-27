@@ -20,6 +20,13 @@
                 {{ Form::textarea('data[content]', null, ['class' => 'form-control has-redactor']) }}
             </div>
         </div>
+        {{-- MULTI LOCALES UPDATE --}}
+        <div class="form-group">
+            {{ Form::label('Content CN', null, ['class' => 'col-sm-2 control-label']) }}
+            <div class="col-sm-10">
+                {{ Form::textarea('data[contentCN]', null, ['class' => 'form-control has-redactor']) }}
+            </div>
+        </div>
         <div class="form-group">
             {{ Form::label('Email', null, ['class' => 'col-sm-2 control-label required']) }}
             <div class="col-sm-10">
