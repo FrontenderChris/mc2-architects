@@ -8,7 +8,7 @@
 
                 <div class="center">
                     <img src="/images/logo.svg" alt="Mc2 Architects Logo">
-                    <p>CONTACT US</p>
+                    <p>{{trans('menu.contactUs')}}</p>
                 </div>
 
                 <a class="js-scroll-down scroller">
@@ -25,7 +25,7 @@
 		<section class="title-container">
             <div class="content-narrow-width">
 
-                <h1>{{ $page->title }}</h1>
+                <h1>{{trans('pages.contactUsTitle')}}</h1>
                 <h2>{{ $page->data['lead_copy'] }}</h2>
 
             </div>
