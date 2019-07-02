@@ -33,7 +33,7 @@
         width: 100%;
         text-align: center;
         padding: 50px 0;
-        overflow: hidden;
+        //overflow: hidden;
 
         .contact {
             width: 100%;
@@ -120,6 +120,36 @@
             transform: translateX(0px);
         }
     }
+
+    .list-unstyled {
+        list-style-type: none;
+    }
+
+    .social-media-list {
+        margin: 5px 0 20px;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            a {
+                color: #333333;
+                font-size: 18px;
+                position: relative;
+                .qr-code {
+                    background: #8c8c8c;
+                    display: none;
+                    height: 200px;
+                    left: -90px;
+                    position: absolute;
+                    width: 200px;
+                    top: -205px;
+                }
+                &:hover .qr-code {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 /********************************************/
@@ -139,6 +169,15 @@ body.black .site-footer {
 
     }
 
+    .social-media-list{
+        li {
+            a {
+                color: #dedede;
+            }
+        }
+    }
+
 }
 
 /********************************************/
+
