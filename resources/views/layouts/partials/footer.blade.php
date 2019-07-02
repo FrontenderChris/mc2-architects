@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="#">
+                    <a target="_blank" href="https://www.instagram.com/">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
