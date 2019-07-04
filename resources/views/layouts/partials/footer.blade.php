@@ -22,7 +22,7 @@
                 <li>
                     <a href="#">
                         <i class="fab fa-weixin"></i>
-                        <div class="qr-code"></div>
+                        <div class="qr-code"><img src="/images/qr-code.jpg" /> </div>
                     </a>
                 </li>
             </ul>

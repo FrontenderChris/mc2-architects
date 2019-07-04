@@ -143,6 +143,11 @@
                     position: absolute;
                     width: 200px;
                     top: -205px;
+                    img {
+                        display: block;
+                        height: 200px;
+                        width: 200px;
+                    }
                 }
                 &:hover .qr-code {
                     display: block;
