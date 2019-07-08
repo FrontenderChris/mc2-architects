@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.instagram.com/">
+                    <a target="_blank" href="https://www.instagram.com/mc2architectsnz/">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
