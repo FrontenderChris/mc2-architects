@@ -9,7 +9,7 @@ Homestead.json
 Vagrantfile
 
 # JetBrains IDE
-/.idea
+.idea
 _ide_helper.php
 .phpstorm.meta.php
 
