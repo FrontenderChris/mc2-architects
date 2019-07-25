@@ -32,4 +32,8 @@ return [
     'mandatoryFieldsTxt' => '*必填项',
     'sendBtn' => '提交',
 
+    //projects
+    'previousProjects' => '上一页',
+    'nextProjects' => '下一页',
+
 ];

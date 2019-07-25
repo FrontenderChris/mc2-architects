@@ -31,4 +31,8 @@ return [
     'messageTxt' => 'Write a Message',
     'mandatoryFieldsTxt' => '*Mandatory Fields',
     'sendBtn' => 'Send',
+
+    //projects
+    'previousProjects' => 'OLDER POSTS',
+    'nextProjects' => 'NEWER POSTS',
 ];

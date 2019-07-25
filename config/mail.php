@@ -54,7 +54,8 @@ return [
     |
     */
 
-    'from' => ['address' => 'admin@brownpaperbag.co.nz', 'name' => null],
+//    'from' => ['address' => 'admin@brownpaperbag.co.nz', 'name' => null],
+    'from' => ['address' => 'gansocc@gmail.com', 'name' => null],
 
     /*
     |--------------------------------------------------------------------------

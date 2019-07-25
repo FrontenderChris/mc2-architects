@@ -75,8 +75,14 @@
 		</section>
         <section class="pagination-module">
 
-            <a href="{{$subPages->nextPageUrl()}}" class="older"><span class="icon-angle-left"></span> OLDER POSTS</a>
-            <a href="{{$subPages->previousPageUrl()}}" class="newer">NEWER POSTS<span class="icon-angle-right"></span></a>
+            <a href="{{$subPages->nextPageUrl()}}" class="older">
+                <span class="icon-angle-left"></span>
+                @lang('pages.previousProjects')
+            </a>
+            <a href="{{$subPages->previousPageUrl()}}" class="newer">
+                @lang('pages.nextProjects')
+                <span class="icon-angle-right"></span>
+            </a>
         </section>
 
 	</main>
