@@ -30,7 +30,7 @@
             <p class="copyright">
 				{{ settings('site_name') }} &copy; {{ date('Y') }} All rights reserved
 			</p>
-            <a href="http://www.brownpaperbag.co.nz/" target="_blank" class="attribution">web design by { brownpaperbag }</a>
+            <!-- <a href="http://www.brownpaperbag.co.nz/" target="_blank" class="attribution">web design by { brownpaperbag }</a> -->
         </div>
     </div>
 </footer>

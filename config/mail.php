@@ -55,7 +55,8 @@ return [
     */
 
 //    'from' => ['address' => 'admin@brownpaperbag.co.nz', 'name' => null],
-    'from' => ['address' => 'gansocc@gmail.com', 'name' => null],
+    //使用gmail作为发件箱
+    'from' => ['address' => 'mc2architectsnzs@gmail.com', 'name' => null],
 
     /*
     |--------------------------------------------------------------------------
