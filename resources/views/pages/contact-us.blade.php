@@ -39,9 +39,10 @@
 					<p class="address">{!! nl2br($page->data['physical_address']) !!}</p>
 					<p class="address">{!! nl2br($page->data['postal_address']) !!}</p>
 				</div>
-				<div class="col2 map-area">
-                    <div class="map" id="map-auckland"></div>
-				</div>
+{{--				<div class="col2 map-area">--}}
+{{--                    <div class="map" id="map-auckland"></div>--}}
+{{--				</div>--}}
+                <div class="col2 map-area"><img src="/images/google-map.jpg"></div>
 
                 @include('modules._contact-form')
 
